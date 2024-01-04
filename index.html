@@ -12,7 +12,7 @@
 <body>
     
    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">HI I AM ROSHAN KUMAR </a>
         <i class='bx bx-food-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active" >Home</a>
@@ -26,16 +26,29 @@
     <div class="home-content">
     <h3> Hello , its me</h3>
     <h1> Roshan Kumar singh</h1>
-    <h3>and i am a <span>Software developer</span></h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam ,modi
-        aspernature placeat
-            architecto amet laudantium id.</p>
+    <h3 id="profession">and i am a professional <span id="jobTitle">Software Developer</span></h3>
+
+    <script>
+      setInterval(function() {
+        var jobTitleElement = document.getElementById("jobTitle");
+        var currentJobTitle = jobTitleElement.innerText;
+
+        if (currentJobTitle === "Software Developer") {
+        jobTitleElement.innerText = "Software Engineer";
+        }else {
+        jobTitleElement.innerText = "Software Developer";
+        }
+      }, 4000);
+    </script>
+    <p>To pursue a challenging and rewarding career in the dynamic field of computer science and engineering,
+        leveraging my existing knowledge while actively seeking opportunities for continuous learning and skill development.
+        Committed to contributing my expertise to the growth and success of the organization I serve.</p>
             <div class="social-media">
-                <a href="##"><i class='bx bxl-linkedin' ></i></a>
-                <a href="##"><i class='bx bx-code-alt' ></i></a>
-                <a href="##"><i class='bx bx-envelope' ></i></a>
+                <a href="https://www.linkedin.com/in/roshan-kumar-081913266/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://leetcode.com/_Roshan_kumar/"><i class='bx bx-code-alt' ></i></a>
+                <a href="mailto:07rks05@gmail.com"><i class='bx bx-envelope' ></i></a>
             </div>
-            <a href="#"class="btn">Download CV</a>
+            <a href="https://drive.google.com/file/d/15r0NLQqNpMdWsWilEWwx-gRz68A6dvsg/view?usp=sharing"class="btn">Download CV</a>
         </div>
         <div class="home-img">
             <img src="images/home.png" alt="">
@@ -55,7 +68,12 @@
             <div class="about-box about-content">
                 <h2 class="heading">About<span> Me</span></h2>
                 <h3>Aspiring Software Developer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempora dolores consequatur ipsam error delectus veniam iure atque libero debitis obcaecati, sequi ducimus deserunt harum illo! Animi veritatis, incidunt possimus alias sit commodi aperiam quaerat maxime nesciunt dicta quia voluptates quibusdam ab a at, suscipit fugit.</p>
+                <p>I am Roshan Kumar </p>
+                <p>a curious guy with a lot of intrest in tech.
+                    loves to learn new technologies and explore different uses of the technology.
+                    basically have learned several technologies and  
+                    
+                </p>
                 <a href="" class="btn">Read more</a>
             </div>
         </div>
