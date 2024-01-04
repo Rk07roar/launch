@@ -270,7 +270,7 @@ span{
 .row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.1rem;
+  margin-bottom: 10rem;
 }
 
 .Project {
@@ -280,7 +280,7 @@ span{
 }
 
 .Heading {
-  font-size: 28px;
+  font-size: 38px;
   color: var(#eb0101);
   margin-bottom: 20px;
 }
@@ -293,7 +293,7 @@ span{
   background: var(--second-bg-color);
 }
 .Project h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
 }
 .Project-container{
   display: grid;
@@ -301,17 +301,22 @@ span{
   align-items: center;
   gap: 2.5rem;
 }
-.Project-container .Project-box{
+.Project-container .Project-box {
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
-  display:flex;
+  display: flex;
+  height: 300px; /* Set a fixed height */
 }
+
 .Project-box img {
   width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire box */
   transition: .5s ease;
 }
+
 .Project-box:hover img {
   transform: scale(1.1);
 }
@@ -322,7 +327,7 @@ span{
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0,.1),var(--main-color));
+  background: linear-gradient(rgba(0, 193, 227, 0.785),var(--main-color));
   display: flex;
   justify-content: center;
   align-items: center;
